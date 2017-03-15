@@ -1,0 +1,89 @@
+@import "header";
+@import "footer";
+@import "slidebar";
+@import "detail";
+$font-stack: Arial,
+Helvetica,
+sans-serif;
+img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.content-top {
+    width: 980px;
+    padding: 0;
+}
+
+.imgLeft {
+    float: left;
+    width: 40%;
+    margin-right: 10px;
+}
+
+.img-left-child {
+    @extend .imgLeft;
+    width: 87px;
+    margin: 0 10px 2px 0;
+}
+
+.box-child {
+    border-top: 1px solid #f5f5f5;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.view-more {
+    display: block;
+    padding: 0;
+    line-height: 24px;
+    border-top: 1px solid #f5f5f5;
+    transition: 0.8s;
+    color: #000;
+    background: red;
+}
+
+a:hover {
+    font: $font-stack;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1874CD;
+    cursor: pointer;
+}
+
+.title-item {
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid #02498b;
+    background-color: #ececee;
+    span {
+         :after {
+            height: 28px;
+            width: 32px;
+            content: "";
+            background: url("../images/bgttright.jpg") no-repeat;
+            position: absolute;
+            right: -31px;
+            top: 0;
+        }
+        a {
+            text-decoration: none;
+            display: inline-block;
+            height: 28px;
+            color: #fff;
+            padding: 0 10px 0 10px;
+            background: url("../images/bgttleft.jpg") repeat-x;
+            position: relative;
+            margin-right: 30px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.content-box {
+    padding-left: 0;
+    margin: 0;
+}

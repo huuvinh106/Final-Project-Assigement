@@ -1,0 +1,36 @@
+.icon {
+    background: #f2faff;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    img {
+        margin-right: 6px;
+        float: left;
+        width: auto;
+        border: 0;
+    }
+}
+
+.right1 {
+    margin-top: 10px;
+}
+
+.icon:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background: #bcd0e1;
+}
+
+.map_canvas {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}

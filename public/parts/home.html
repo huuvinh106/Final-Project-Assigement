@@ -1,0 +1,107 @@
+<div class="content">
+    <div class="container">
+        <div ng-controller="content" class="content-top">
+            <div class="row no-gutters">
+                <div class=" col-md-9 col-xs-8">
+                    <!--box1-->
+                    <div class="col-md-6 col-sm-12 col-xs-12 content-box" ng-repeat="content in contentData">
+                        <div class="box_main">
+                            <h3 class="title-item">
+                                <span><a href="#/detail">{{content.name}}</a></span>
+                            </h3>
+                            <div>
+                                <a href="#/detail">{{content.title}}</a>
+                                <div class="imgLeft">
+                                    <img src="{{content.imageUrl}}" class="img-fluid" alt="">
+                                </div>
+                                <div class="newsdetail">
+                                    <p>{{content.description}}</p>
+                                </div>
+
+                            </div>
+                            <!--boxchild-->
+
+                            <div class="col-xs-12 content-box">
+                                <div class="box-child">
+                                    <div class="img-left-child">
+                                        <img src="{{content.imageUrl}}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="newsdetail">
+                                        <a>{{content.title}}</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 content-box">
+                                <div class="box-child">
+                                    <div class="img-left-child">
+                                        <img src="{{content.imageUrl}}" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="newsdetail">
+                                        <a href="#">{{content.title}}</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!--<a href="#" class="view-more">Xem tiếp
+                                <i class="fa fa-angle-double-right"></i>
+                            </a>-->
+                    </div>
+                    <!--endbox1-->
+
+                    <!--box2-->
+
+                    <!--endbox4-->
+
+
+
+                </div>
+
+
+                <!--bannerRight-->
+                <div class="col-xs-12 col-md-3 col-sm-3 content-box">
+                    <div class="right">
+                        <div class="bannerRight">
+                            <a href="#">
+                                <img src="./images/bar.jpg" class="img-fluid" alt="Bộ thủ tục hành chính">
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="right1">
+                        <div class="boxright">
+                            <a href="#" class="icon" title="Số dt dây nóng">
+                                <img src="./images/icon2.png" alt="">
+                                <span>số điện thoại đường dây nóng</span>
+                            </a>
+                            <a href="#" class="icon" title="Tuyển dụng công chức">
+                                <img src="./images/iconTuyenCC.png" alt="">
+                                <span>Tuyển dụng công chức Hồ Chí Minh</span>
+                            </a>
+                            <a href="#" class="icon" title="Thông tin thống kê">
+                                <img src="./images/iconTuyenCC.png" alt="">
+                                <span>thông tin thống kê</span>
+                            </a>
+                            <a href="#" class="icon" title="Thư điện tử">
+                                <img src="./images/icon5.png" alt="">
+                                <span>thư điện tử</span>
+                            </a>
+                            <a href="#" class="icon" title="Giá cả thị trường">
+                                <img src="./images/icon6.png" alt="">
+                                <span>giá cả thị trường</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <section>
+                        <div class="map_canvas"><img class="img-fluid" src="./images/hocTap.gif" alt="" </div>
+                    </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,90 @@
+$font-stack: Arial,
+Helvetica,
+sans-serif;
+$color: #ffffff;
+* {
+    margin: 0 auto;
+    padding: 0px;
+    font-family: $font-stack;
+}
+
+.banner {
+    position: relative;
+    width: 980px;
+    height: 126px;
+    background: url("../images/banner.png") no-repeat;
+    .logo {
+        position: absolute;
+        float: left;
+        width: 115px;
+        height: auto;
+        left: 20px;
+        top: 8px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .text-bg {
+        text-align: center;
+        width: 70%;
+        top: 20px;
+        padding-top: 20px;
+        a {
+            text-decoration: none;
+            h1 {
+                font-family: $font-stack;
+                font-size: 30px;
+                font-weight: bold;
+                color: $color;
+                margin-left: 25px;
+                margin-bottom: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.head-top {
+    height: 50px;
+    padding: 0;
+}
+
+.nav {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: bold;
+    li {
+        a {
+            padding: 10px;
+            color: $color;
+            text-decoration: none;
+        }
+    }
+}
+
+.nav {
+    a:hover {
+        color: #ff0000;
+    }
+}
+
+.collapse {
+    font-size: 14px;
+    background-color: #1874CD;
+    width: 980px;
+}
+
+.Language {
+    float: right;
+}
+
+.Languages {
+    float: right;
+    margin-right: 2px;
+    margin-top: 2px;
+    li {
+        display: inline-block;
+    }
+}

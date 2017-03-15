@@ -1,0 +1,104 @@
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="banner">
+                        <div class="logo">
+                            <a href="#/">
+                                <img src="./images/logo.png" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="text-bg col-sm-12 col-xs-12">
+                            <a href="#/">
+                                <h1>CỔNG THÔNG TIN ĐIỆN TỬ</h1>
+                            </a>
+                        </div>
+                        <div class="Languages">
+                            <li>
+                                <span class="Language selected" title="Tiếng Việt (Việt Nam)">
+                                    <img src="../images/vi-VN.gif" alt="vi-VN">
+                                </span>
+                            </li>
+                            <li>
+                                <span class="Language" title="English (United States)">
+                                    <a href="#">
+                                        <img src="../images/en-US.gif" alt="en-US"></a>
+                                    </span>
+                            </li>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+            <div class="head-top ">
+                <div class="n-avigation">
+                    <nav class="navbar navbar-toggleable-md navbar-light bg-faded  nav_bottom" role="navigation">
+
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!--<div class="navbar-header nav_2">
+                            <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            <a class="navbar-brand" href="#"></a>
+                        </div>-->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div ng-controller="menuController" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav nav_1">
+                                <li class="nav-item active"><a ui-sref="home">TRANG CHỦ</a></li>
+                                <li ng-repeat="menu in menuData" class="dropdown mega-dropdown active">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.name}}</a>
+                                </li>
+                            </ul>
+                            <!--<form class="search form-inline my-2 my-lg-0">
+                                <input class="txtsearch form-control mr-sm-2" type="text" placeholder="Tìm Kiếm">
+                                <button class="glyphicon glyphicon-search " type="submit"></button>
+                                </form>-->
+                        </div>
+                        <!-- /.navbar-collapse -->
+
+                    </nav>
+
+
+                </div>
+
+
+
+
+            </div>
+            <!--<div class="col-xs-12 col-sm-12 ">
+                <div class="row ">
+
+                    <div class="date">
+
+                        <div id="date">Loading...</div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--<script type="text/javascript">
+    function refrClock() {
+
+        var d = new Date();
+        var day = d.getDay();
+        var date = d.getDate();
+        var month = d.getMonth();
+        var year = d.getFullYear();
+        var days = new Array("Chủ nhật", "Thứ hai", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7");
+        var months = new Array("1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12");
+        var am_pm;
+        document.getElementById("date").innerHTML = days[day] + "," + " Ngày " + date + "/" + months[month] + "/" + year;
+        setTimeout("refrClock()", 1000);
+    }
+    refrClock();
+</script>-->
