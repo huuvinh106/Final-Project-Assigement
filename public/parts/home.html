@@ -1,44 +1,48 @@
 <div class="content">
     <div class="container">
-        <div ng-controller="content" class="content-top">
+        <div class="content-top">
             <div class="row no-gutters">
-                <div class=" col-md-9 col-xs-8">
-                    <!--box1-->
+                <div class=" col-md-9 col-xs-8" ng-controller="content">
+                    <!--mainBox-->
                     <div class="col-md-6 col-sm-12 col-xs-12 content-box" ng-repeat="content in contentData">
                         <div class="box_main">
                             <h3 class="title-item">
+                                <!--title content box-->
                                 <span><a href="#/detail">{{content.name}}</a></span>
                             </h3>
                             <div>
-                                <a href="#/detail">{{content.title}}</a>
+                                <!--title news content-->
+
+                                <a class="newtitle" href="#/detail">{{content.title}}</a>
                                 <div class="imgLeft">
                                     <img src="{{content.imageUrl}}" class="img-fluid" alt="">
                                 </div>
+                                <!--news content-->
                                 <div class="newsdetail">
                                     <p>{{content.description}}</p>
                                 </div>
 
                             </div>
-                            <!--boxchild-->
-
+                            <!--Main box news child1-->
                             <div class="col-xs-12 content-box">
                                 <div class="box-child">
                                     <div class="img-left-child">
                                         <img src="{{content.imageUrl}}" class="img-fluid" alt="">
                                     </div>
+
                                     <div class="newsdetail">
-                                        <a>{{content.title}}</a>
+                                        <a>{{content.titleChild}}</a>
                                     </div>
                                 </div>
                             </div>
-
+                            <!--Main box news child 2-->
                             <div class="col-xs-12 content-box">
                                 <div class="box-child">
                                     <div class="img-left-child">
                                         <img src="{{content.imageUrl}}" class="img-fluid" alt="">
                                     </div>
                                     <div class="newsdetail">
-                                        <a href="#">{{content.title}}</a>
+                                        <a href="#">{{content.tchild}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -49,59 +53,30 @@
                                 <i class="fa fa-angle-double-right"></i>
                             </a>-->
                     </div>
-                    <!--endbox1-->
-
-                    <!--box2-->
-
-                    <!--endbox4-->
-
-
-
                 </div>
 
 
                 <!--bannerRight-->
-                <div class="col-xs-12 col-md-3 col-sm-3 content-box">
-                    <div class="right">
-                        <div class="bannerRight">
-                            <a href="#">
-                                <img src="./images/bar.jpg" class="img-fluid" alt="Bộ thủ tục hành chính">
-                            </a>
-
-                        </div>
-
+                <div class="col-xs-12 col-md-3 col-sm-3 content-box" ng-controller="slideBar">
+                    <div class=" boxright">
+                        <a href="#">
+                            <span>Thông Báo</span>
+                            <img src="./images/bar.jpg" alt=" ">
+                        </a>
                     </div>
                     <div class="right1">
-                        <div class="boxright">
-                            <a href="#" class="icon" title="Số dt dây nóng">
-                                <img src="./images/icon2.png" alt="">
-                                <span>số điện thoại đường dây nóng</span>
-                            </a>
-                            <a href="#" class="icon" title="Tuyển dụng công chức">
-                                <img src="./images/iconTuyenCC.png" alt="">
-                                <span>Tuyển dụng công chức Hồ Chí Minh</span>
-                            </a>
-                            <a href="#" class="icon" title="Thông tin thống kê">
-                                <img src="./images/iconTuyenCC.png" alt="">
-                                <span>thông tin thống kê</span>
-                            </a>
-                            <a href="#" class="icon" title="Thư điện tử">
-                                <img src="./images/icon5.png" alt="">
-                                <span>thư điện tử</span>
-                            </a>
-                            <a href="#" class="icon" title="Giá cả thị trường">
-                                <img src="./images/icon6.png" alt="">
-                                <span>giá cả thị trường</span>
-                            </a>
-
-                        </div>
-
+                        <a href="#" class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem ">
+                            <img src="{{item.imageUrl}} " alt=" ">
+                            <span>{{item.name}}</span></a>
                     </div>
                     <section>
-                        <div class="map_canvas"><img class="img-fluid" src="./images/hocTap.gif" alt="" </div>
+                        <div class="map_canvas "><img class="img-fluid " src="./images/hocTap.gif " alt=" " </div>
                     </section>
-
                     </div>
+                    <!--endbannerright-->
+
+
                 </div>
             </div>
         </div>
+    </div>

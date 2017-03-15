@@ -12,47 +12,50 @@ img {
     width: 100%;
 }
 
+// div content top
 .content-top {
     width: 980px;
     padding: 0;
 }
 
+//div hinh ben trai
 .imgLeft {
     float: left;
     width: 40%;
     margin-right: 10px;
 }
 
+//hinh con 
 .img-left-child {
     @extend .imgLeft;
     width: 87px;
     margin: 0 10px 2px 0;
 }
 
+// box new child
 .box-child {
     border-top: 1px solid #f5f5f5;
     margin-bottom: 30px;
     padding-top: 10px;
 }
 
-.view-more {
-    display: block;
-    padding: 0;
-    line-height: 24px;
-    border-top: 1px solid #f5f5f5;
-    transition: 0.8s;
-    color: #000;
-    background: red;
-}
-
+// .view-more {
+//     display: block;
+//     padding: 0;
+//     line-height: 24px;
+//     border-top: 1px solid #f5f5f5;
+//     transition: 0.8s;
+//     color: #000;
+//     background: red;
+// }
 a:hover {
-    font: $font-stack;
+    @extend .newtitle;
     text-decoration: none;
-    font-weight: bold;
     color: #1874CD;
     cursor: pointer;
 }
 
+//title news box
 .title-item {
     font-weight: bold;
     font-size: 12px;
@@ -81,6 +84,12 @@ a:hover {
             text-transform: uppercase;
         }
     }
+}
+
+.newtitle {
+    font: $font-stack;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .content-box {

@@ -24,9 +24,27 @@ var detailController = app.controller('detailController', function($scope, $http
 });
 var slideBar = app.controller('slideBar', function($scope, $http, $stateParams) {
     $scope.slideItem = [{
-        "name": "thong bao",
-        "imageUrl": "./images/bar.jpg"
-    }];
+            "name": "số điện thoại đường dây nóng",
+            "imageUrl": "./images/icon1.png"
+        },
+        {
+            "name": "Tuyển dụng công chức Hồ Chí Minh",
+            "imageUrl": "./images/icon2.png"
+        },
+        {
+            "name": "thông tin thống kê",
+            "imageUrl": "./images/icon3.png"
+        },
+        {
+            "name": "thư điện tử",
+            "imageUrl": "./images/icon4.png"
+        },
+        {
+            "name": "giá cả thị trường",
+            "imageUrl": "./images/icon5.png"
+        },
+
+    ];
     // $http.get('/services/slider.json').then(function(response) {
     //     $scope.slideItem = response.data;
     // });
