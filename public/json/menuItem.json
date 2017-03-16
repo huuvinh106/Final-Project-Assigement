@@ -1,23 +1,22 @@
-[
-    {
+[{
         "id": "gioi_thieu",
-        "name":"GIỚI THIỆU"
-        
+        "name": "GIỚI THIỆU"
+
     },
     {
         "id": "tin_tuc_su_kien",
-        "name":"TIN TỨC - SỰ KIỆN"
-        
-        
+        "name": "TIN TỨC - SỰ KIỆN"
+
+
     },
     {
         "id": "dau_tu",
-        "name":"CƠ HỘI ĐẦU TƯ PHÁT TRIỂN"
-       
+        "name": "CƠ HỘI ĐẦU TƯ PHÁT TRIỂN"
+
     },
     {
         "id": "quan_li",
-        "name":"QUẢN LÝ - ADMIN"
-        
+        "name": "QUẢN LÝ - ADMIN"
+
     }
 ]
