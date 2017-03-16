@@ -1,6 +1,6 @@
 var menuController = app.controller('menuController', function($rootScope, $scope, $http) {
     $scope.menuData = [];
-    $http.get('/services/menuItem.json').then(function(response) {
+    $http.get('/json/menuItem.json').then(function(response) {
         $scope.menuData = response.data;
 
     });
@@ -9,7 +9,7 @@ var menuController = app.controller('menuController', function($rootScope, $scop
 
 var content = app.controller('content', function($rootScope, $scope, $http) {
     $scope.contentData = [];
-    $http.get('/services/content.json').then(function(response) {
+    $http.get('/json/content.json').then(function(response) {
         $scope.contentData = response.data;
 
     });
@@ -18,7 +18,7 @@ var content = app.controller('content', function($rootScope, $scope, $http) {
 
 var detailController = app.controller('detailController', function($scope, $http, $stateParams) {
     $scope.detail = '';
-    $http.get('/services/detail.json').then(function(response) {
+    $http.get('/json/detail.json').then(function(response) {
         $scope.detail = response.data;
     });
 });

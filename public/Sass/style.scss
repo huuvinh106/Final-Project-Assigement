@@ -12,7 +12,6 @@ img {
     width: 100%;
 }
 
-// div content top
 .content-top {
     width: 980px;
     padding: 0;
@@ -22,14 +21,13 @@ img {
 .imgLeft {
     float: left;
     width: 40%;
-    margin-right: 10px;
+    margin: 0 10px 2px 0;
 }
 
 //hinh con 
 .img-left-child {
     @extend .imgLeft;
     width: 87px;
-    margin: 0 10px 2px 0;
 }
 
 // box new child
@@ -90,6 +88,11 @@ a:hover {
     font: $font-stack;
     font-weight: bold;
     font-size: 14px;
+}
+
+.box_main {
+    padding: 0;
+    margin: 0;
 }
 
 .content-box {

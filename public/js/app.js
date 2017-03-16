@@ -20,18 +20,18 @@ angular.element(document).ready(function() {
 app.config(function($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: 'parts/home.html',
+        templateUrl: 'views/home.html',
         controller: 'content'
     });
 
     $stateProvider.state('detail', {
         url: '/detail',
-        templateUrl: 'parts/detail.html',
+        templateUrl: 'views/detail.html',
         controller: 'detailController'
     });
     $stateProvider.state('sitebar', {
         url: '/sitebar',
-        templateUrl: 'parts/view-bar.html',
+        templateUrl: 'views/view-bar.html',
         controller: 'sitebarController'
     });
 });
