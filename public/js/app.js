@@ -29,4 +29,9 @@ app.config(function($stateProvider) {
         templateUrl: 'parts/detail.html',
         controller: 'detailController'
     });
+    $stateProvider.state('sitebar', {
+        url: '/sitebar',
+        templateUrl: 'parts/view-bar.html',
+        controller: 'sitebarController'
+    });
 });

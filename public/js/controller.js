@@ -22,7 +22,7 @@ var detailController = app.controller('detailController', function($scope, $http
         $scope.detail = response.data;
     });
 });
-var slideBar = app.controller('slideBar', function($scope, $http, $stateParams) {
+var sitebarController = app.controller('sitebarController', function($scope, $http, $stateParams) {
     $scope.slideItem = [{
             "name": "số điện thoại đường dây nóng",
             "imageUrl": "./images/icon1.png"

@@ -1,5 +1,17 @@
-<div class="col-xs-12 col-md-3 col-sm-3 content-box">
-    <div ng-controller="slideBar">
-        <ng-include src="'site-bar.html'"></ng-include>
+<div class="col-md-3 col-sm-4">
+    <div class=" boxright">
+        <a href="#">
+            <span>Thông Báo</span>
+            <img src="./images/bar.jpg" alt=" ">
+        </a>
     </div>
+    <div class="right" ng-controller="sitebarController">
+        <a href="#" class="icon" ng-repeat="item in slideItem ">
+            <img src="{{item.imageUrl}} " alt=" ">
+            <span>{{item.name}}</span></a>
+    </div>
+    <section>
+        <div class="map_canvas "><img class="img-fluid " src="./images/hocTap.gif " alt=" " <="" div="">
+        </div>
+    </section>
 </div>

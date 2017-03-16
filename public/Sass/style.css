@@ -86,8 +86,17 @@
     width: auto;
     border: 0; }
 
-.right1 {
+.boxright {
   margin-top: 10px; }
+
+.banner-top {
+  width: 100%;
+  z-index: 1; }
+
+.content-banner {
+  position: relative;
+  float: right;
+  display: flex; }
 
 .icon:after {
   content: "";

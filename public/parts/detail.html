@@ -4,15 +4,15 @@
             <div class="row">
 
                 <div class="main-detail">
-                    <div class="col-xs-12 col-sm-9 ">
+                    <div class="col-xs-12 col-sm-9" ng-controller="detailController">
                         <div class="col-xs-12 col-sm-8 content-box">
                             <h3 class="title-item">
                                 <span><a href="#/">TIN ĐỊA PHƯƠNG</a></span>
                             </h3>
-                            <h1>Ngày thứ bảy xanh, sạch, đẹp</h1>
+                            <h1>{{detail.name}}</h1>
                             <div class="page-detail">
                                 <div class="content-detail">
-                                    <span>Sáng 1-10, tất cả các phường, xã của TP.Biên Hòa đã đồng loạt ra quân thực hiện phong trào “Ngày thứ bảy xanh, sạch, đẹp” năm 2016. Tham gia phong trào có toàn bộ hệ thống chính trị, các cơ quan, đơn vị, trường học đóng trên địa bàn phường, xã và đông đảo các tầng lớp nhân dân.</span>
+                                    <span>{{detail.description}}</span>
                                 </div>
                             </div>
                         </div>

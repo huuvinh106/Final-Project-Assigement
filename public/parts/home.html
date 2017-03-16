@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content-top">
             <div class="row no-gutters">
-                <div class=" col-md-9 col-xs-8" ng-controller="content">
+                <div class=" col-md-9 col-sm-8" ng-controller="content">
                     <!--mainBox-->
                     <div class="col-md-6 col-sm-12 col-xs-12 content-box" ng-repeat="content in contentData">
                         <div class="box_main">
@@ -57,26 +57,27 @@
 
 
                 <!--bannerRight-->
-                <div class="col-xs-12 col-md-3 col-sm-3 content-box" ng-controller="slideBar">
+                <!--<div class="col-md-3 col-sm-4">
+
                     <div class=" boxright">
                         <a href="#">
                             <span>Thông Báo</span>
                             <img src="./images/bar.jpg" alt=" ">
                         </a>
                     </div>
-                    <div class="right1">
-                        <a href="#" class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem ">
+                    <div class="right" ng-controller="sitebarController">
+                        <a href=" # " class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem ">
                             <img src="{{item.imageUrl}} " alt=" ">
                             <span>{{item.name}}</span></a>
                     </div>
                     <section>
                         <div class="map_canvas "><img class="img-fluid " src="./images/hocTap.gif " alt=" " </div>
                     </section>
-                    </div>
-                    <!--endbannerright-->
+                    </div>-->
+                <!--endbannerright-->
 
 
-                </div>
             </div>
         </div>
     </div>
+</div>
