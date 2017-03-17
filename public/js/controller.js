@@ -45,7 +45,34 @@ var sitebarController = app.controller('sitebarController', function($scope, $ht
         },
 
     ];
-    // $http.get('/services/slider.json').then(function(response) {
-    //     $scope.slideItem = response.data;
-    // });
+
+});
+var admin = app.controller('admin', function($scope, $http, $stateParams) {
+    $scope.adItem = [{
+            "time": "12/03/2017",
+            "catagory": "catagoryA",
+            "title": "Ron rang lr ky niem ngay quoc khanh"
+        },
+        {
+            "time": "12/03/2017",
+            "catagory": "catagoryA",
+            "title": "Ron rang lr ky niem ngay quoc khanh"
+        },
+        {
+            "time": "12/03/2017",
+            "catagory": "catagoryA",
+            "title": "Ron rang lr ky niem ngay quoc khanh"
+        },
+        {
+            "time": "12/03/2017",
+            "catagory": "catagoryA",
+            "title": "Ron rang lr ky niem ngay quoc khanh"
+        },
+        {
+            "time": "12/03/2017",
+            "catagory": "catagoryA",
+            "title": "Ron rang lr ky niem ngay quoc khanh"
+        },
+
+    ];
 });

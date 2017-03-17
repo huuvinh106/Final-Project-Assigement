@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="row">
+        <div class="admin">
+            <div class="col-12">
+                <table class="table">
+
+                    <tbody>
+                        <tr style="background: gray;">
+                            <th class="ad-boder">#</th>
+                            <th class="ad-boder">Time</th>
+                            <th class="ad-boder">Catagory</th>
+                            <th class="ad-boder">Title</th>
+                        </tr>
+                        <tr ng-repeat="item in adItem">
+                            <th class="ad-boder">
+                                <div class="checkbox"><label><input type="checkbox" value=""></label></div>
+                            </th>
+                            <td class="ad-boder">{{item.time}}</td>
+                            <td class="ad-boder">{{item.catagory}}</td>
+                            <td class="ad-boder">{{item.title}}</td>
+                        </tr>
+                    </tbody>
+                    <div class="clearfix"></div>
+                </table>
+                <section>
+                    <button type="button" class="btn btn-info">Add</button>
+                    <button type="button" class="btn btn-info">Update</button>
+                    <button type="button" class="btn btn-info">Delete</button>
+                </section>
+                <div class="list-add">
+                    <p style="border-bottom: 1px ridge lightgray;">Add new</p>
+
+                    <form class="form-horizontal">
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2  col-form-label">Catagory</label>
+                            <div class="col-sm-10">
+                                <select class="form-control">
+                                    <option>Catagory</option>
+                                    <option>Catagory A</option>
+                                    <option>Catagory B</option>
+                                    <option>Orther</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Title</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" value="text" id="example-text-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Content</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Catagory(english)</label>
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Title(english)</label>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Content(english)</label>
+
+                        </div>
+                        <section>
+
+                            <button type="button" class="btn btn-success">Preview</button>
+                            <button type="button" class="btn btn-success">Submit</button>
+                            <button type="button" class="btn btn-success">Cancel</button>
+                            <button type="button" class="btn btn-success">Clear</button>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

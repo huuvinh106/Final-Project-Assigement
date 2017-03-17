@@ -1,22 +1,25 @@
-<div class="footer">
+<div class="col-xs-12 col-sm-12 footer">
     <div class="container">
         <div class="row">
-            <div class="footer-top">
-                <div>
-                    <div class="footerb">
-                        <!--menu nav-->
-                        <nav class="navbar navbar-toggleable-md navbar-light bg-faded  nav_bottom" role="navigation">
-                            <div ng-controller="menuController" class="collapse navbar-collapse">
-                                <ul class="nav navbar-nav nav_1">
-                                    <li class="nav-item active"><a ui-sref="home">TRANG CHỦ</a></li>
-                                    <li ng-repeat="menu in menuData" class="dropdown mega-dropdown active">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.name}}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <!--end menu nav-->
-                    </div>
+            <div class=" footer-top">
+                <div class="footerb">
+                    <!--menu nav-->
+                    <nav class="nav-fotter">
+                        <ul ng-controller="menuController " class="ftmenu nav navbar-nav  ">
+                            <li><a ui-sref="home ">TRANG CHỦ</a></li>
+                            <li ng-repeat="menu in menuData " class=" dropdown mega-dropdown active ">
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown ">{{menu.name}}</a>
+                            </li>
+                            <li class="dropdown mega-dropdown active ">
+                                <a href="# " class="dropdown-toggle " data-toggle="dropdown ">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </nav>
+                    <section class="col-xs-12 footer-title ">
+                        <h1>cổng thông tin điện tử</h1>
+                    </section>
+
                 </div>
             </div>
         </div>

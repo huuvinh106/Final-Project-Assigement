@@ -37,24 +37,49 @@
   height: 50px;
   padding: 0; }
 
-.nav {
-  height: 40px;
+.namenu {
+  height: 36px;
   margin: 0;
   padding: 0;
   display: inline-block;
   font-weight: bold; }
-  .nav li a {
+  .namenu li a {
     padding: 10px;
     color: #ffffff;
     text-decoration: none; }
 
 .nav a:hover {
+  height: 36px;
   color: #ff0000; }
 
 .collapse {
   font-size: 14px;
   background-color: #1874CD;
   width: 980px; }
+
+.btn-search {
+  color: #1874CD;
+  font-weight: bold;
+  padding: 2px 8px;
+  border: 1px solid #21436b;
+  border-radius: 3px;
+  display: inline-block;
+  background: #ffffff;
+  line-height: 20px; }
+
+.search {
+  float: right;
+  margin-right: -5px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .search .txtsearch {
+    background: #ececee;
+    height: 25px;
+    margin: 0;
+    width: 200px;
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #ececee; }
 
 .Language {
   float: right; }
@@ -68,9 +93,34 @@
 
 .footerb {
   width: 980px;
-  height: 100px;
+  height: 150px;
   margin: auto;
-  background: #1874CD; }
+  background-color: #1874CD;
+  position: relative; }
+
+.footer-title {
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  left: 0; }
+
+.nav-fotter {
+  border-right: 1px solid #ffffff;
+  height: 20px; }
+
+.ftmenu {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-weight: bold; }
+  .ftmenu li a {
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none; }
 
 .icon {
   background: #f2faff;
@@ -88,6 +138,10 @@
 
 .boxright {
   margin-top: 10px; }
+
+.sitebar {
+  float: right;
+  width: 200px; }
 
 .banner-top {
   width: 100%;
@@ -126,6 +180,20 @@
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 6px; }
+
+.admin {
+  width: 980px; }
+
+.ad-boder {
+  border: 1px;
+  border-style: ridge; }
+
+.list-add {
+  border: 1px;
+  border-style: ridge;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 img {
   margin: 0;
@@ -191,6 +259,23 @@ a:hover {
 
 .content-box {
   padding-left: 0;
-  margin: 0; }
+  margin: 0;
+  border: 0; }
+
+.more {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px; }
+
+.view-more {
+  width: 100%;
+  display: block;
+  padding: 0;
+  border-top: 1px solid #f5f5f5; }
+  .view-more li:hover {
+    width: 50%;
+    color: #ffffff;
+    background-color: #02498b; }
 
 /*# sourceMappingURL=style.css.map */

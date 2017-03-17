@@ -1,17 +1,23 @@
-<div class="col-md-3 col-sm-4">
-    <div class=" boxright">
-        <a href="#">
-            <span>Thông Báo</span>
-            <img src="./images/bar.jpg" alt=" ">
-        </a>
-    </div>
-    <div class="right" ng-controller="sitebarController">
-        <a href="#" class="icon" ng-repeat="item in slideItem ">
-            <img src="{{item.imageUrl}} " alt=" ">
-            <span>{{item.name}}</span></a>
-    </div>
-    <section>
-        <div class="map_canvas "><img class="img-fluid " src="./images/hocTap.gif " alt=" ">
+<div class="sitebar">
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <div class=" boxright">
+                <a href="#">
+                    <span>Thông Báo</span>
+                    <img src="./images/bar.jpg" alt=" ">
+                </a>
+            </div>
+            <div class="right" ng-controller="sitebarController">
+                <a href="#" class="icon" ng-repeat="item in slideItem ">
+                    <img src="{{item.imageUrl}} " alt=" ">
+                    <span>{{item.name}}</span></a>
+            </div>
+            <section>
+                <div class="map_canvas "><img class="img-fluid " src="./images/hocTap.gif " alt=" ">
+                </div>
+            </section>
+
+
         </div>
-    </section>
+    </div>
 </div>

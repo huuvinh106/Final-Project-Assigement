@@ -2,6 +2,7 @@
 @import "footer";
 @import "slidebar";
 @import "detail";
+@import "admin";
 $font-stack: Arial,
 Helvetica,
 sans-serif;
@@ -98,4 +99,24 @@ a:hover {
 .content-box {
     padding-left: 0;
     margin: 0;
+    border: 0;
+}
+
+.more {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.view-more {
+    width: 100%;
+    display: block;
+    padding: 0;
+    border-top: 1px solid #f5f5f5;
+    li:hover {
+        width: 50%;
+        color: #ffffff;
+        background-color: #02498b;
+    }
 }
