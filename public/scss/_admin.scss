@@ -2,15 +2,51 @@
     width: 980px;
 }
 
-.ad-boder {
-    border: 1px;
-    border-style: ridge;
+body {
+    background-color: #FFFFFF;
 }
 
 .list-add {
+    border-style: ridge;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-grbutton {
+    padding: 0;
+    margin: 0 0 10px 20px;
+}
+
+.table-fixed {
+    width: 100%;
     border: 1px;
     border-style: ridge;
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    tbody {
+        height: 200px;
+        overflow-y: auto;
+        width: 100%;
+    }
+    thead,
+    tbody,
+    tr,
+    td,
+    th {
+        display: block;
+    }
+    tbody {
+        td {
+            float: left;
+            input {
+                margin: 0;
+            }
+        }
+    }
+    thead {
+        tr {
+            th {
+                margin: -1px;
+                float: left;
+            }
+        }
+    }
 }

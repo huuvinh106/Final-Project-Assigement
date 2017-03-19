@@ -48,31 +48,43 @@ var sitebarController = app.controller('sitebarController', function($scope, $ht
 
 });
 var admin = app.controller('admin', function($scope, $http, $stateParams) {
+
     $scope.adItem = [{
             "time": "12/03/2017",
-            "catagory": "catagoryA",
-            "title": "Ron rang lr ky niem ngay quoc khanh"
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
         },
         {
             "time": "12/03/2017",
-            "catagory": "catagoryA",
-            "title": "Ron rang lr ky niem ngay quoc khanh"
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
         },
         {
             "time": "12/03/2017",
-            "catagory": "catagoryA",
-            "title": "Ron rang lr ky niem ngay quoc khanh"
+            "category": "catagoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
         },
         {
             "time": "12/03/2017",
-            "catagory": "catagoryA",
-            "title": "Ron rang lr ky niem ngay quoc khanh"
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
         },
         {
             "time": "12/03/2017",
-            "catagory": "catagoryA",
-            "title": "Ron rang lr ky niem ngay quoc khanh"
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
         },
+        {
+            "time": "12/03/2017",
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
+        },
+        {
+            "time": "12/03/2017",
+            "category": "categoryA",
+            "title": "Ron rang le ky niem ngay quoc khanh"
+        },
+
 
     ];
 });

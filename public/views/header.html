@@ -54,11 +54,11 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div ng-controller="menuController" class="collapse navbar-collapse">
                             <ul class="namenu nav navbar-nav nav_1">
-                                <li class="nav-item"><a ui-sref="home">TRANG CHỦ</a></li>
+                                <li class="nav-item text-uppercase"><a ui-sref="home">trang chủ</a></li>
                                 <li ng-repeat="menu in menuData" class="dropdown mega-dropdown ">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menu.name}}</a>
                                 </li>
-                                <li><a ui-sref="admin">ADMIN</a></li>
+                                <li class="text-uppercase"><a ui-sref="admin">admin</a></li>
                             </ul>
                             <form class="search form-inline my-2 my-lg-0">
                                 <input class="txtsearch form-control mr-sm-2" type="text" placeholder=" Tìm Kiếm">

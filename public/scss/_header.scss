@@ -18,8 +18,8 @@ $color: #ffffff;
         float: left;
         width: 115px;
         height: auto;
-        left: 20px;
-        top: 8px;
+        left: 10px;
+        top: 6px;
         a {
             text-decoration: none;
         }
@@ -36,7 +36,7 @@ $color: #ffffff;
                 font-size: 30px;
                 font-weight: bold;
                 color: $color;
-                margin-left: 25px;
+                margin-left: 0;
                 margin-bottom: 0;
                 padding: 0;
             }
@@ -90,9 +90,9 @@ $color: #ffffff;
 
 .search {
     float: right;
-    margin-right: -5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: -10px;
+    margin-top: 4px;
+    margin-bottom: 0;
     .txtsearch {
         background: #ececee;
         height: 25px;
