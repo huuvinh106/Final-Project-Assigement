@@ -1,11 +1,11 @@
-var app = angular.module('app', ['ui.router']);
+var app = angular.module('app', ['ui.router', 'ng']);
+
 
 angular.element(document).ready(function() {
     if (location.hash === '') {
         location.hash = '/';
     }
 });
-
 app.config(function($stateProvider) {
     $stateProvider.state('home', {
         url: '/',
@@ -18,11 +18,7 @@ app.config(function($stateProvider) {
         templateUrl: 'views/detail.html',
         controller: 'detailController'
     });
-    // $stateProvider.state('sitebar', {
-    //     url: '/sitebar',
-    //     templateUrl: 'views/view-bar.html',
-    //     controller: 'sitebarController'
-    // });
+
     $stateProvider.state('admin', {
         url: '/admin',
         templateUrl: 'views/admin.html',

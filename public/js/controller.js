@@ -7,6 +7,7 @@ var menuController = app.controller('menuController', function($rootScope, $scop
 
 });
 
+
 var content = app.controller('content', function($rootScope, $scope, $http) {
     $scope.contentData = [];
     $http.get('/json/content.json').then(function(response) {
