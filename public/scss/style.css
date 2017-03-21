@@ -3,18 +3,20 @@
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif; }
 
+@media screen and (min-width: 768px) {
+  .banner {
+    width: 980px;
+    height: 122px; } }
 .banner {
   position: relative;
-  width: 980px;
-  height: 126px;
-  background: url("../images/banner.png") no-repeat; }
+  background: url("../images/header.png") no-repeat; }
   .banner .logo {
     position: absolute;
     float: left;
     width: 115px;
     height: auto;
     left: 10px;
-    top: 6px; }
+    top: 4px; }
     .banner .logo a {
       text-decoration: none; }
   .banner .text-bg {
@@ -34,7 +36,7 @@
         padding: 0; }
 
 .head-top {
-  height: 50px;
+  height: 40px;
   padding: 0; }
 
 .namenu {
@@ -91,13 +93,13 @@
   .Languages li {
     display: inline-block; }
 
-.footerb {
-  width: 980px;
-  height: 150px;
-  margin: auto;
-  background-color: #1874CD;
-  position: relative; }
-
+@media only screen and (min-width: 768px) {
+  .footerb {
+    position: relative;
+    width: 980px;
+    height: 150px;
+    margin: auto;
+    background-color: #1874CD; } }
 .footer-title {
   text-align: center;
   text-transform: uppercase;
@@ -188,9 +190,22 @@ body {
   background-color: #FFFFFF; }
 
 .list-add {
+  border: 1px;
   border-style: ridge;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.cut-string {
+  width: 163px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.cut-string-content {
+  width: 489px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
 
 .btn-grbutton {
   padding: 0;
@@ -215,18 +230,18 @@ body {
     .table-fixed tbody td input {
       margin: 0; }
   .table-fixed thead tr th {
-    margin: -1px;
+    margin: 0;
     float: left; }
 
+@media only screen and (min-width: 768px) {
+  .content-top {
+    width: 980px;
+    padding: 0; } }
 img {
   margin: 0;
   padding: 0;
   max-width: 100%;
   width: 100%; }
-
-.content-top {
-  width: 980px;
-  padding: 0; }
 
 .imgLeft, .img-left-child {
   float: left;
@@ -300,5 +315,11 @@ a:hover {
     width: 50%;
     color: #ffffff;
     background-color: #02498b; }
+
+.newsDetail {
+  width: 196px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

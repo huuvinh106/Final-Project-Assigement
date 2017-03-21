@@ -4,64 +4,60 @@
             <div class="row no-gutters">
                 <div class="col-xs-12 col-sm-9" ng-controller="content">
                     <!--mainBox-->
-                    <div class="col-xs-6 col-md-6 content-box" ng-repeat="content in contentData">
+                    <div class="col-xs-6 col-md-6 content-box" ng-repeat="category in contentData| unique: 'category'">
                         <div class="box_main">
                             <h3 class="title-item">
                                 <!--title content box-->
-                                <span><a href="#/detail">{{content.name}}</a></span>
+                                <span><a href="#/detail">{{category}}</a></span>
                             </h3>
-                            <div class="ndtintuc">
+                            <div class="ndtintuc" ng-repeat="doc in contentData| filter: category">
                                 <!--title news content-->
-
-                                <a class="newtitle" href="#/detail">{{content.title}}</a>
+                                <a class="newtitle" href="#/news/{{doc._id}}">{{doc.title}}</a>
                                 <div class="imgLeft">
-                                    <img src="{{content.imageUrl}}" class="img-responsive img-fluid" alt="">
+                                    <img src="./images/box2.jpg" class="img-fluid" alt="">
                                 </div>
                                 <!--news content-->
-                                <div class="newsdetail">
-                                    <p>{{content.description}}</p>
+                                <div class="newsDetail">
+                                    <p>{{doc.content}}</p>
                                 </div>
-
                             </div>
                             <!--Main box news child1-->
-                            <div class=" content-box">
+                            <!--<div class="col-xs-12 content-box">
                                 <div class="box-child">
                                     <div class="img-left-child">
-                                        <img src="{{content.imgUrls}}" class="img-responsive img-fluid" alt="">
+                                        <img src="{{content.imgUrls}}" class="img-fluid" alt="">
                                     </div>
-
                                     <div class="newsdetail">
                                         <a href="#/detail">{{content.titleChild}}</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                             <!--Main box news child 2-->
-                            <div class=" content-box">
+                            <!--<div class="col-xs-12 content-box">
                                 <div class="box-child">
                                     <div class="img-left-child">
-                                        <img src="{{content.imgUrls1}}" class="img-responsive img-fluid" alt="">
+                                        <img src="{{content.imgUrls1}}" class="img-fluid" alt="">
                                     </div>
                                     <div class="newsdetail">
                                         <a href="#/detail">{{content.tchild}}</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
-                        <a href="#" class="view-more" aria-label="Next">
-                            <li class="badge badge-pill badge-primary page-item">
-                                <span class="more">Xem thêm</span>
-                                <span aria-hidden="false">&raquo;</span></li>
-                        </a>
+                        <section class="col-xs-12">
+                            <a href="#" class="view-more" aria-label="Next">
+                                <li class="badge badge-pill badge-primary page-item">
+                                    <span class="more">Xem thêm</span>
+                                    <span aria-hidden="false">&raquo;</span></li>
+                            </a>
+                        </section>
                     </div>
                     <div class="clearfix"></div>
-
-
                 </div>
                 <!--bannerRight-->
                 <div class="col-sm-3">
                     <section class="boxright">
                         <a href="#">
-
                             <img src="./images/bar.jpg" alt=" " class="img-fluid">
                         </a>
                     </section>
@@ -72,7 +68,6 @@
                         <a href="#" class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem ">
                             <img src="{{item.imageUrl}} " alt=" ">
                             <span>{{item.name}}</span>
-
                         </a>
                     </div>
                     <section>

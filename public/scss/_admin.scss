@@ -7,9 +7,24 @@ body {
 }
 
 .list-add {
+    border: 1px;
     border-style: ridge;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.cut-string {
+    width: 163px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cut-string-content {
+    width: 489px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .btn-grbutton {
@@ -44,7 +59,7 @@ body {
     thead {
         tr {
             th {
-                margin: -1px;
+                margin: 0;
                 float: left;
             }
         }

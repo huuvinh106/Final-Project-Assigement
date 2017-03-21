@@ -10,6 +10,17 @@
         "tchild": "Không thoái vốn vội vã"
     },
     {
+        "id": "dau_tu",
+        "name": "đầu tư - đấu thầu",
+        "imageUrl": "./images/box1.jpg",
+        "imgUrls": "./images/boxc.jpg",
+        "imgUrls1": "./images/boxc1.jpg",
+        "title": "Tìm cách mở rộng thị trường trong nước",
+        "description": "Ông Nguyễn Thế Bảo, Giám đốc Hợp tác xã xoài Suối Lớn (huyện Xuân Lộc), cho biết còn hơn 1 tháng nữa mới đến vụ thu hoạch xoài  ",
+        "titleChild": "Từ chuối nghĩa tình đến chuối bền vững",
+        "tchild": "Không thoái vốn vội vã"
+    },
+    {
         "id": "chinh_sach",
         "name": "chính sách mới",
         "imageUrl": "./images/box1.jpg",
@@ -41,5 +52,17 @@
         "titleChild": "Từ “chuối nghĩa tình” đến “chuối bền vững”",
         "tchild": "Không thoái vốn vội vã",
         "description": "Ông Nguyễn Thế Bảo, Giám đốc Hợp tác xã xoài Suối Lớn (huyện Xuân Lộc), cho biết còn hơn 1 tháng nữa mới đến vụ thu hoạch xoài  "
+    },
+    {
+        "id": "chien_luoc",
+        "name": "định hướng chiến lược - quy hoạch",
+        "imageUrl": "./images/box1.jpg",
+        "imgUrls": "./images/boxc.jpg",
+        "imgUrls1": "./images/boxc1.jpg",
+        "title": "​Xoài Suối Lớn dồi dào sản lượng xuất khẩu",
+        "titleChild": "Từ “chuối nghĩa tình” đến “chuối bền vững”",
+        "tchild": "Không thoái vốn vội vã",
+        "description": "Ông Nguyễn Thế Bảo, Giám đốc Hợp tác xã xoài Suối Lớn (huyện Xuân Lộc), cho biết còn hơn 1 tháng nữa mới đến vụ thu hoạch xoài  "
     }
+
 ]

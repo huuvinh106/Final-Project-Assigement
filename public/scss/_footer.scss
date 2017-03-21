@@ -1,9 +1,11 @@
-.footerb {
-    width: 980px;
-    height: 150px;
-    margin: auto;
-    background-color: #1874CD;
-    position: relative;
+@media only screen and (min-width: 768px) {
+    .footerb {
+        position: relative;
+        width: 980px;
+        height: 150px;
+        margin: auto;
+        background-color: #1874CD;
+    }
 }
 
 .footer-title {

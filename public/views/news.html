@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="container">
+        <div ng-repeat="category in adItem | unique : 'category'">
+            <h1>{{category}}</h1>
+            <div ng-repeat="news in adItem | filter: category">{{news}}</div>
+        </div>
+    </div>
+</div>

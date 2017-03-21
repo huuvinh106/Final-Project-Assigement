@@ -1,4 +1,4 @@
-var app = angular.module('app', ['ui.router', 'ng']);
+var app = angular.module('app', ['ui.router', 'customFilters', 'couchdb']);
 
 
 angular.element(document).ready(function() {
@@ -14,7 +14,7 @@ app.config(function($stateProvider) {
     });
 
     $stateProvider.state('detail', {
-        url: '/detail',
+        url: '/news/:docId',
         templateUrl: 'views/detail.html',
         controller: 'detailController'
     });

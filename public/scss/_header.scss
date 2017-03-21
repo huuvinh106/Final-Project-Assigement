@@ -8,18 +8,23 @@ $color: #ffffff;
     font-family: $font-stack;
 }
 
+@media screen and (min-width:768px) {
+    .banner {
+        width: 980px;
+        height: 122px;
+    }
+}
+
 .banner {
     position: relative;
-    width: 980px;
-    height: 126px;
-    background: url("../images/banner.png") no-repeat;
+    background: url("../images/header.png") no-repeat;
     .logo {
         position: absolute;
         float: left;
         width: 115px;
         height: auto;
         left: 10px;
-        top: 6px;
+        top: 4px;
         a {
             text-decoration: none;
         }
@@ -45,7 +50,7 @@ $color: #ffffff;
 }
 
 .head-top {
-    height: 50px;
+    height: 40px;
     padding: 0;
 }
 
