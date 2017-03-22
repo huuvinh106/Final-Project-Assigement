@@ -1,12 +1,21 @@
-var app = angular.module('app', ['ui.router', 'customFilters', 'couchdb']);
+var app = angular.module('app', ['ui.router', 'categoryFilters', 'couchdb']);
 
+app.filter('strLimit', ['$filter', function($filter) {
+    return function(input, limit) {
+        if (!input) return;
+        if (input.length <= limit) {
+            return input;
+        }
 
-angular.element(document).ready(function() {
-    if (location.hash === '') {
-        location.hash = '/';
-    }
-});
-app.config(function($stateProvider) {
+        return $filter('limitTo')(input, limit) + '...';
+    };
+}]);
+// angular.element(document).ready(function() {
+//     if (location.hash === '') {
+//         location.hash = '/';
+//     }
+// });
+app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
         url: '/',
         templateUrl: 'views/home.html',
@@ -14,7 +23,7 @@ app.config(function($stateProvider) {
     });
 
     $stateProvider.state('detail', {
-        url: '/news/:docId',
+        url: '/detail/:docId',
         templateUrl: 'views/detail.html',
         controller: 'detailController'
     });
@@ -22,6 +31,7 @@ app.config(function($stateProvider) {
     $stateProvider.state('admin', {
         url: '/admin',
         templateUrl: 'views/admin.html',
-        controller: 'admin'
+        controller: 'adminController'
     });
+    $urlRouterProvider.otherwise('/');
 });

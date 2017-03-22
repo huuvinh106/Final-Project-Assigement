@@ -7,25 +7,6 @@ var menuController = app.controller('menuController', function($rootScope, $scop
 
 });
 
-
-var content = app.controller('content', function($rootScope, $scope, $http, couchdbService) {
-    $scope.contentData = [];
-    couchdbService.getAllDocs().then(function(allDocs) {
-        $scope.contentData = allDocs;
-    });
-
-
-
-
-});
-
-var detailController = app.controller('detailController', function($scope, $http, $stateParams, couchdbService) {
-    $scope.detail = '';
-    $scope.docid = $stateParams.docId;
-    couchdbService.getById($stateParams.docId).then(function(allDocs) {
-        $scope.detail = allDocs;
-    });
-});
 var sitebarController = app.controller('sitebarController', function($scope, $http, $stateParams) {
     $scope.slideItem = [{
             "name": "số điện thoại đường dây nóng",
@@ -47,10 +28,6 @@ var sitebarController = app.controller('sitebarController', function($scope, $ht
             "name": "giá cả thị trường",
             "imageUrl": "./images/icon5.png"
         },
-
     ];
 
-});
-var admin = app.controller('admin', function($scope, $http, $stateParams) {
-    $scope.adItem = [];
 });

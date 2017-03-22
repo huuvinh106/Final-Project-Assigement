@@ -1,9 +1,11 @@
-app.controller("mainCtrl", ['$scope', 'couchdbService', function($scope, couchdbService) {
+app.controller("adminController", ['$scope', 'couchdbService', function($scope, couchdbService) {
     $scope.selectedDocs = [];
     $scope.allDocs = [];
     $scope.allDocs = function() {
         couchdbService.getAllDocs().then(function(allDocs) {
             $scope.allDocs = allDocs;
+
+
         });
     };
     $scope.allDocs();
@@ -19,25 +21,30 @@ app.controller("mainCtrl", ['$scope', 'couchdbService', function($scope, couchdb
     $scope.submit = function() {
         couchdbService.save($scope.workingDoc).then(function(allDocs) {
             $scope.allDocs();
+
         });
     }
 
     $scope.update = function() {
         $scope.workingDoc = $scope.selectedDocs[0];
         $scope.up = !$scope.up;
-
-
     }
 
-    $scope.delete = function() {
+    $scope.delete = function(doc) {
         angular.forEach($scope.selectedDocs, function(doc, index) {
             couchdbService.delete(doc).then(function(result) {
                 if ($scope.selectedDocs.length - 1 == index) {
-                    $scope.selectedDocs = [];
+                    // $scope.selectedDocs = [];
                     $scope.allDocs.splice(doc, 1);
                 }
             });
         });
     }
+    $scope.Reset = function() {
+        $scope.category = '';
+        $scope.title = '';
+        $scope.content = '';
+    }
+    $scope.Reset();
 
 }]);
