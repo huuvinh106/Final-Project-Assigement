@@ -21,6 +21,7 @@ app.controller("adminController", ['$scope', 'couchdbService', function($scope, 
     $scope.submit = function() {
         couchdbService.save($scope.actionDoc).then(function(allDocs) {
             $scope.allDocs();
+
         });
     }
 
