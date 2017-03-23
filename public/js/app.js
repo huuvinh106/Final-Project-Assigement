@@ -1,20 +1,7 @@
 var app = angular.module('app', ['ui.router', 'categoryFilters', 'couchdb']);
 
-app.filter('strLimit', ['$filter', function($filter) {
-    return function(input, limit) {
-        if (!input) return;
-        if (input.length <= limit) {
-            return input;
-        }
 
-        return $filter('limitTo')(input, limit) + '...';
-    };
-}]);
-// angular.element(document).ready(function() {
-//     if (location.hash === '') {
-//         location.hash = '/';
-//     }
-// });
+
 app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('home', {
         url: '/',

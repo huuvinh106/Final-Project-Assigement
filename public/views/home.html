@@ -3,31 +3,30 @@
         <div class="content-top">
             <div class="row no-gutters">
                 <!--col-xs-12 col-sm-9 col-xs-6 col-md-6-->
-                <div class="col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                     <!--mainBox-->
                     <div class="col-xs-12 col-sm-6 row content-box" ng-repeat="category in contentData| orderBy: '_id' | unique: 'category'">
-                        <div class=" box_main ">
-                            <h3 class="category ">
+                        <div class=" box_main">
+                            <h3 class="category">
                                 <!--title content box-->
-                                <span><a href="#/ ">{{category}}</a></span>
+                                <span><a href="#/">{{category}}</a></span>
                             </h3>
-                            <div class="ndtintuc " ng-repeat="doc in contentData | filter: category | limitTo: 3 ">
+                            <div class="ndtintuc" ng-repeat="doc in contentData | filter: category | limitTo: 3 ">
                                 <!--title news content-->
-                                <a class="newtitle " href="#/detail/{{doc._id}} ">{{doc.title}}</a>
+                                <p class="newtitle"><a href="#/detail/{{doc._id}}">{{doc.title}}</a></p>
                                 <div class="imgLeft img-left">
-                                    <img src="./images/box2.jpg " class="img-fluid img-responsive " alt="Responsive image ">
+                                    <img src="./images/box4.jpg " class="img-fluid img-responsive" alt="Responsive image">
                                 </div>
-                                <!--news content-->
-                                <div class="newsDetail ">
-                                    <p class="content-news ">{{doc.content|strLimit: 120}}</p>
+                                <!--news contentstrLimit-->
+                                <div class="newsDetail">
+                                    <p class="content-news">{{doc.content|strLimit:160}}</p>
                                 </div>
                             </div>
-
                             <section>
-                                <a href="# " class="view-more row" aria-label="Next ">
-                                    <li class="badge badge-pill badge-primary page-item ">
-                                        <span class="more ">Xem thêm</span>
-                                        <span aria-hidden="false ">&raquo;</span></li>
+                                <a href="#" class="view-more row" aria-label="Next">
+                                    <li class="badge badge-pill badge-primary page-item">
+                                        <span class="more">Xem thêm</span>
+                                        <span aria-hidden="false">&raquo;</span></li>
                                 </a>
                             </section>
                         </div>
@@ -36,17 +35,17 @@
                     <div class="clearfix "></div>
                 </div>
                 <!--bannerRight-->
-                <div class="col-xs-12 col-sm-3 ">
-                    <section class="boxright ">
+                <div class="col-xs-12 col-sm-3">
+                    <section class="boxright">
                         <a href="# ">
-                            <img src="./images/bar.jpg " alt=" " class="img-fluid ">
+                            <img src="./images/bar.jpg " alt=" " class="img-fluid">
                         </a>
                     </section>
                     <section>
-                        <div class="map_canvas "><img class="img-fluid " src="./images/tsty.jpg " alt=" "> </div>
+                        <div class="map_canvas"><img class="img-fluid" src="./images/tsty.jpg " alt=" "> </div>
                     </section>
                     <div class="right map_canvas " ng-controller="sitebarController ">
-                        <a href="# " class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem ">
+                        <a href="# " class="icon " title="Số dt dây nóng " ng-repeat="item in slideItem">
                             <img src="{{item.imageUrl}} " alt=" ">
                             <span>{{item.name}}</span>
                         </a>

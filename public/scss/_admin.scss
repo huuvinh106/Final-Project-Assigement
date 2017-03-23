@@ -1,6 +1,8 @@
 @media only screen and(min-width:768px) {
     .admin {
         width: 980px;
+        margin: 0 auto;
+        padding: 0;
     }
 }
 
@@ -10,14 +12,16 @@
 }
 
 .cut-string {
-    width: 163px;
+    float: left;
+    width: 156px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .cut-string-content {
-    width: 490px;
+    float: left;
+    width: 448px;
     margin: 0;
     padding: 0;
     text-overflow: ellipsis;
@@ -30,21 +34,21 @@
     margin: 0 0 10px 20px;
 }
 
-@media only screen and(min-width:768px) {
-    tbody {
-        display: block;
-        height: 230px;
-        overflow: auto;
-        overflow-x: hidden;
-    }
-    thead,
-    tbody tr {
-        display: table;
-        width: 100%;
-        table-layout: fixed;
-    }
-    thead {
-        width: 100%;
-        //width: calc( 100% - 0.1px)
-    }
+tbody {
+    display: block;
+    height: 230px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+thead,
+tbody tr td {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    width: 100%;
+    //width: calc( 100% - 0.1px)
 }

@@ -1,22 +1,22 @@
-<div class="col-xs-12 col-sm-12 footer">
+<div class="col-sm-12 col-xs-12 footer">
     <div class="container">
         <div class="row">
             <div class=" footer-top">
-                <div class="footerb">
+                <div class="footerb" ng-controller="menuController">
                     <!--menu nav-->
                     <nav class="nav-fotter">
-                        <ul ng-controller="menuController " class="ftmenu nav navbar-nav  ">
+                        <ul class="ftmenu nav navbar-nav">
                             <li><a ui-sref="home ">TRANG CHỦ</a></li>
                             <li ng-repeat="menu in menuData " class=" dropdown mega-dropdown active ">
                                 <a href="#" class="dropdown-toggle " data-toggle="dropdown ">{{menu.name}}</a>
                             </li>
                             <li class="dropdown mega-dropdown active ">
-                                <a href="# " class="dropdown-toggle " data-toggle="dropdown ">LIÊN HỆ</a>
+                                <a href="#" class="dropdown-toggle " data-toggle="dropdown ">LIÊN HỆ</a>
                             </li>
                         </ul>
                         <div class="clearfix"></div>
                     </nav>
-                    <section class="col-xs-12 footer-title ">
+                    <section class="col-xs-12">
                         <h1>cổng thông tin điện tử</h1>
                     </section>
 

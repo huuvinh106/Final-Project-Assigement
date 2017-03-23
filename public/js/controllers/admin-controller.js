@@ -19,32 +19,33 @@ app.controller("adminController", ['$scope', 'couchdbService', function($scope, 
     }
 
     $scope.submit = function() {
-        couchdbService.save($scope.workingDoc).then(function(allDocs) {
+        couchdbService.save($scope.actionDoc).then(function(allDocs) {
             $scope.allDocs();
-
         });
     }
 
     $scope.update = function() {
-        $scope.workingDoc = $scope.selectedDocs[0];
+        $scope.actionDoc = $scope.selectedDocs[0];
         $scope.up = !$scope.up;
+
     }
 
     $scope.delete = function(doc) {
         angular.forEach($scope.selectedDocs, function(doc, index) {
             couchdbService.delete(doc).then(function(result) {
                 if ($scope.selectedDocs.length - 1 == index) {
-                    // $scope.selectedDocs = [];
+                    $scope.selectedDocs = [];
                     $scope.allDocs.splice(doc, 1);
                 }
             });
         });
     }
     $scope.Reset = function() {
-        $scope.category = '';
-        $scope.title = '';
-        $scope.content = '';
+        $scope.actionDoc = null;
+
     }
     $scope.Reset();
+
+
 
 }]);
