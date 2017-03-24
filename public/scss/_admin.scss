@@ -1,54 +1,43 @@
-@media only screen and(min-width:768px) {
-    .admin {
-        width: 980px;
-        margin: 0 auto;
-        padding: 0;
+    @media only screen and(min-width:768px) {
+        .admin {
+            width: 980px;
+            position: relative;
+        }
+        .list-add {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .cut-string {
+            width: 300px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .cut-string-content {
+            width: 443px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .btn-grbutton {
+            padding: 0;
+            margin: 0 0 10px 20px;
+        }
     }
-}
-
-.list-add {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.cut-string {
-    float: left;
-    width: 156px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.cut-string-content {
-    float: left;
-    width: 448px;
-    margin: 0;
-    padding: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.btn-grbutton {
-    padding: 0;
-    margin: 0 0 10px 20px;
-}
-
-tbody {
-    display: block;
-    height: 230px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-thead,
-tbody tr td {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
-thead {
-    width: 100%;
-    //width: calc( 100% - 0.1px)
-}
+    
+    // tbody {
+    //     display: block;
+    //     height: 230px;
+    //     overflow-y: auto;
+    //     overflow-x: hidden;
+    // }
+    // thead,
+    // tbody tr td {
+    //     display: table;
+    //     width: 100%;
+    //     table-layout: fixed;
+    // }
+    // thead {
+    //     width: 100%;
+    //     //width: calc( 100% - 0.1px)
+    // }
